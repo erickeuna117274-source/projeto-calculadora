@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ETE Palmares - Calculadora de Média</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Tela para colocar o professor -->
+    <div id="telaProfessor" class="tela">
+
+        <div class="caixa">
+
+            <h1>ETE PALMARES</h1>
+
+            <h2>Calculadora de Média</h2>
+
+            <p>Digite o nome do professor para começar:</p>
+
+            <input
+                type="text"
+                id="professor"
+                placeholder="Nome do professor"
+            >
+
+            <button onclick="entrar()">
+                Entrar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Calculadora -->
+    <div id="calculadora" class="container">
+
+        <header>
+            <h1>ETE PALMARES</h1>
+
+            <p>
+                Professor:
+                <strong id="nomeProfessor"></strong>
+            </p>
+        </header>
+
+
+        <div class="formulario">
+
+            <h2>Calculadora de Média</h2>
+
+            <label>Nome do aluno:</label>
+
+            <input
+                type="text"
+                id="nomeAluno"
+                placeholder="Nome do aluno"
+            >
+
+
+            <h3>Notas dos Trimestres</h3>
+
+            <label>1º Trimestre:</label>
+
+            <input
+                type="number"
+                id="nota1"
+                min="0"
+                max="10"
+                step="0.1"
+            >
+
+
+            <label>2º Trimestre:</label>
+
+            <input
+                type="number"
+                id="nota2"
+                min="0"
+                max="10"
+                step="0.1"
+            >
+
+
+            <label>3º Trimestre:</label>
+
+            <input
+                type="number"
+                id="nota3"
+                min="0"
+                max="10"
+                step="0.1"
+            >
+
+
+            <label>Quantidade de faltas:</label>
+
+            <input
+                type="number"
+                id="faltas"
+                min="0"
+            >
+
+
+            <button onclick="calcular()">
+                CALCULAR MÉDIA
+            </button>
+
+            <button onclick="limpar()" class="botaoLimpar">
+                LIMPAR
+            </button>
+
+        </div>
+
+
+        <div id="resultado"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

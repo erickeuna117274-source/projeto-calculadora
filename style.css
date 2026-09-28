@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #eaf3ff;
+
+    color: #12345b;
+}
+
+
+/* Tela inicial */
+
+.tela {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0757a8;
+}
+
+
+.caixa {
+    width: 350px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px #003b75;
+}
+
+
+.caixa h1 {
+    color: #0757a8;
+}
+
+
+.caixa h2 {
+    color: #333;
+}
+
+
+.caixa p {
+    color: #555;
+}
+
+
+/* Campos */
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 7px;
+    margin-bottom: 15px;
+
+    border: 2px solid #b8d5f5;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+}
+
+
+input:focus {
+    outline: none;
+
+    border-color: #0757a8;
+}
+
+
+/* Botões */
+
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #0757a8;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #06447f;
+}
+
+
+.botaoLimpar {
+    background-color: #777;
+}
+
+
+.botaoLimpar:hover {
+    background-color: #555;
+}
+
+
+/* Calculadora */
+
+.container {
+    display: none;
+
+    width: 90%;
+
+    max-width: 600px;
+
+    margin: 30px auto;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px #b5c9df;
+}
+
+
+header {
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #0757a8;
+
+    color: white;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+
+header p {
+    margin-bottom: 0;
+}
+
+
+.formulario {
+    padding: 25px;
+}
+
+
+.formulario h2 {
+    text-align: center;
+}
+
+
+.formulario h3 {
+    color: #0757a8;
+
+    border-bottom: 2px solid #d9e9fa;
+
+    padding-bottom: 8px;
+}
+
+
+label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+
+/* Resultado */
+
+#resultado {
+    margin: 0 25px 25px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background-color: #eaf3ff;
+
+    text-align: center;
+
+    display: none;
+}
+
+
+#resultado h2 {
+    color: #0757a8;
+}
+
+
+.aprovado {
+    color: green;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+.recuperacao {
+    color: #e68a00;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+.reprovado {
+    color: red;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
